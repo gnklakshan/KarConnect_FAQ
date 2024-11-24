@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KarConnect - FAQ</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --light-bg: #f3f4f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #ffffff;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .faq-section {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .faq {
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .faq:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq h2 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .faq p {
+            color: var(--text-color);
+        }
+
+        .faq a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .faq a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: var(--light-bg);
+            margin-top: 3rem;
+        }
+
+        /* Add animation for FAQ items */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .faq {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 640px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .faq {
+                padding: 1rem;
+            }
+
+            .faq h2 {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Add a search bar */
+        .search-container {
+            max-width: 600px;
+            margin: -1.5rem auto 2rem;
+            padding: 0 1rem;
+            position: relative;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+        }
+
+        .search-bar:focus {
+            outline: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KarConnect FAQ</h1>
+        <p>Your questions, answered!</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search FAQ...">
+    </div>
+
+    <main>
+        <section class="faq-section">
+            <div class="faq">
+                <h2>What is KarConnect?</h2>
+                <p>KarConnect is a platform that connects users with nearby vehicles and helps vehicle owners manage their bookings and track their vehicles in real-time. Our platform streamlines the process of finding and booking vehicles while providing comprehensive management tools for vehicle owners.</p>
+            </div>
+
+            <div class="faq">
+                <h2>How do I find vehicles nearby?</h2>
+                <p>Simply open the mobile app, and based on your location, you will see a list of available vehicles near you. You can filter based on vehicle type, price range, ratings, or specific features. The app provides real-time availability updates and detailed vehicle information to help you make the best choice.</p>
+            </div>
+
+            <div class="faq">
+                <h2>How do vehicle owners add and manage vehicles?</h2>
+                <p>Vehicle owners can use our web application to easily manage their fleet. The process includes:
+                1. Registering vehicles with detailed information and photos
+                2. Setting availability schedules and pricing
+                3. Tracking bookings and vehicle locations in real-time
+                4. Accessing comprehensive analytics and reports
+                The interface is intuitive and designed for efficient fleet management.</p>
+            </div>
+
+            <div class="faq">
+                <h2>Is KarConnect free to use?</h2>
+                <p>Yes, downloading and browsing the app is completely free! While basic features are available to all users, we offer premium subscriptions with additional benefits such as priority booking, advanced analytics, and enhanced support. Vehicle owners can choose from different subscription tiers based on their fleet size and needs.</p>
+            </div>
+
+            <div class="faq">
+                <h2>How secure is my data on KarConnect?</h2>
+                <p>KarConnect prioritizes your security and privacy. We implement industry-standard encryption for all data transmission and storage. Our security measures include:
+                - End-to-end encryption for sensitive information
+                - Regular security audits and updates
+                - Secure payment processing
+                - Strict data protection policies
+                Your personal and vehicle information is protected with the highest security standards.</p>
+            </div>
+
+            <div class="faq">
+                <h2>What payment methods are accepted?</h2>
+                <p>KarConnect accepts various payment methods including credit/debit cards, digital wallets (Apple Pay, Google Pay), and bank transfers. All payments are processed securely through our trusted payment partners, ensuring safe and convenient transactions for both vehicle owners and renters.</p>
+            </div>
+
+            <div class="faq">
+                <h2>How does the booking process work?</h2>
+                <p>The booking process is straightforward: Select your desired vehicle, choose your rental period, and submit your booking request. Vehicle owners will confirm your booking within 24 hours. Once confirmed, you'll receive detailed pickup instructions and can manage your booking through the app.</p>
+            </div>
+
+            <div class="faq">
+                <h2>Who can I contact for support?</h2>
+                <p>Our support team is available 24/7 through multiple channels:
+                - Email: <a href="mailto:support@karconnect.com">support@karconnect.com</a>
+                - In-app chat feature
+                - Phone support: 1-800-KAR-CONNECT
+                We typically respond to all inquiries within 2 hours during business hours.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KarConnect. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple search functionality
+        document.querySelector('.search-bar').addEventListener('input', function(e) {
+            const searchText = e.target.value.toLowerCase();
+            const faqs = document.querySelectorAll('.faq');
+            
+            faqs.forEach(faq => {
+                const text = faq.textContent.toLowerCase();
+                if (text.includes(searchText)) {
+                    faq.style.display = 'block';
+                } else {
+                    faq.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
